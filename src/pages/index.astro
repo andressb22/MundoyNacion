@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main >
+		<div>
+			<img src="../../public/logo.png"/>
+		</div>
+		<div>
+			<h1>Memoria y Nación</h1>
+		</div>
+		<div>
+			<a href="/inicio">
+				<button>Empezar</button>
+			</a>
+			
+		</div>
+	</main>
+</Layout>
+
+<style>
+	button{
+		outline: none;
+		border: none;
+		background-color: #000;
+		color: #fff;
+		height: 54px;
+		font-size: 25px;
+		padding: 0 70px;
+		border-radius: 54px;
+		cursor: pointer;
+	}
+	main{
+		padding: 20% 0;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	h1{
+		font-size: 56px;
+		font-weight: bold;
+		text-align: center;
+	}
+</style>

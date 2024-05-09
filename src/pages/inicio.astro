@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+  
+    <div class="cont-image">
+        <img src="../../public/logo.png"/>
+    </div>
+    <div>
+        <h2>Memoria y Nación</h2>
+    </div>
+    <div>
+        <p>Elige la casilla que corresponda a tu resultado en la ruleta.</p>
+    </div>
+    <div class="cont-btn">
+      <a href="/bienvenida">
+        <button>Bienvenida</button>
+      </a>
+      <a href="/muroDiversidad">
+        <button>Muro de diversidad</button>
+      </a>
+      <a href="/retabloPortatil">
+        <button>Retablo portatil</button>
+      </a>
+      <a href="/coronaPlumas">
+        <button>Corona de plumas</button>
+      </a>
+    </div>
+  </main>
+</Layout>
+
+<style>
+    main{
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+        padding-top: 30px;
+	}
+    button{
+		outline: none;
+		border: none;
+		background-color: #000;
+		color: #fff;
+		height: 54px;
+		font-size: 25px;
+		width: 300px;
+		border-radius: 54px;
+		cursor: pointer;
+        margin-bottom: 30px;
+	}
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        padding: 0 10%;
+    }
+    .cont-btn{
+        display: flex;
+        flex-direction: column;
+        background-color: #D9D9D9;
+        align-items: center;
+        width: 100vw;
+        padding-top: 50px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    .cont-image{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: 60px;
+    }
+</style>
